@@ -16,6 +16,8 @@ data("ortiz.tomato.covs")
 yield <- as_tibble(ortiz.tomato.yield)
 covs <- as_tibble(ortiz.tomato.covs)
 
+#add line here
+
 tomato <- full_join(yield,covs, by='env') %>% filter(Driv==0)
 
 tomato
